@@ -2,8 +2,8 @@ const messages = [
     "Em chắc chứ?",
     "Thật à???",
     "Này em đang hơi tiêu cực đấy ?",
-    "Đ cùng anh đi mòaa...",
-    "Ít nhất hãy nghĩ về nó đi !",
+    "Đicùng anh đi mòaa...",
+    "Nghĩ về cuộc vui đi:>> !",
     "Em không đi là anh buồn đấy ...",
     "Nài anh thực sự buồn đấy ...",
     "Nài anh sẽ thực sự rất rất rất buồn đếy...",
@@ -14,8 +14,8 @@ const messages = [
 let messageIndex = 0;
 
 function handleNoClick() {
-    const noButton = document.querySelector('.Không-button');
-    const yesButton = document.querySelector('.Có đi:>-button');
+    const noButton = document.querySelector('.no-button');
+    const yesButton = document.querySelector('.Yes-button');
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
